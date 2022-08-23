@@ -11,16 +11,16 @@ import okhttp3.ResponseBody;
 
 public class CoverImageGetter {
 
-	/*public static void main(String[] args) throws IOException {
-		
+	public static void main(String[] args) throws IOException {
+		/*
 		 Jeu jeu = new Jeu();
 		
-		jeu.setAnneeDeSortie(2010);
-		jeu.setNom("Start the Party!");
-		jeu.setPlateforme("PS3");
+		jeu.setAnneeDeSortie(1998);
+		jeu.setNom("NFL Blitz 2000");
+		jeu.setPlateforme("PS");
 		
-		System.out.println(getCoverImage(jeu));
-	}*/
+		System.out.println(getCoverImage(jeu));*/
+	}
 	
 	/**
 	 * Remplace, dans une chaine, les espaces par %20, par exemple
@@ -31,7 +31,8 @@ public class CoverImageGetter {
 	 * @return la chaine modifiee
 	 */
 	public static String getNomTransforme(String nomInitial) {
-		return nomInitial.replace(" ","%20");
+		nomInitial = nomInitial.replace(" ","%20");
+		return nomInitial;
 	}
 
 	/**
@@ -56,7 +57,7 @@ public class CoverImageGetter {
 
 		// on crée un string pour la requête ) effectuer
 		String requete = getNomTransforme("https://bing-image-search1.p.rapidapi.com/images/search?q="+getRequete(jeu.getNom(),jeu.getPlateforme(),String.valueOf(jeu.getAnneeDeSortie())) + "&count=1");
-		
+		System.out.println(requete);
 		// on crée le client pour l'API 
 		OkHttpClient client = new OkHttpClient();
 		
@@ -89,6 +90,9 @@ public class CoverImageGetter {
 		}
 		
 		// et on le renvoie. 
+		url = url.replace("http://","");
+		url = url.replace("https://","");
+		url = url.replace("\\/","/");
 		return url;
 	}
 }
