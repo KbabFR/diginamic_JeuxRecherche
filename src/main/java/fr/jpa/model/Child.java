@@ -27,10 +27,9 @@ public class Child {
 	private List<String> genresPreferes;
 	
 	public Child() {
+		super();
 		
 	}
-
-
 	public Child(long id, String prenom, int age) {
 		this.id = id;
 		this.prenom = prenom;
