@@ -28,6 +28,12 @@
 			<version>3.0.5</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.squareup.okhttp3</groupId>
+			<artifactId>okhttp</artifactId>
+			<version>4.9.1</version>
+		</dependency>
+
 	</dependencies>
 
 </project>
