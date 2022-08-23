@@ -1,21 +1,37 @@
-package fr.jpa;
+package fr.jpa.convertisseur;
 
 import java.io.*;
 
+import fr.jpa.model.Jeu;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
 
+/**
+ * 
+ * @author Valentin Duflot
+ * Cette classe a pour but de fournir les outils 
+ * nécessaires à la conversion d'une base en .csv 
+ * en base en .sql
+ * 
+ */
 public class Convertisseur {
 	
 	private static EntityManagerFactory sessionFactory; 
 	private static EntityManager manager;
 	
+	/**
+	 * Etablit les outils nécessaires à la communication avec la base de données
+	 */
 	public static void setUp() {
 		sessionFactory = Persistence.createEntityManagerFactory("my-persistence-unit"); 
 		Convertisseur.manager = sessionFactory.createEntityManager();
 	}
+	
+	/**
+	 * @return le EntityManager s'il existe
+	 */
 	public static EntityManager getManager()  { return manager; } 
 	
 	public static void main(String[] args) {
