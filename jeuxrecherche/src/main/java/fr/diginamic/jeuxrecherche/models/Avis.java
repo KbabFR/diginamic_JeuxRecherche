@@ -25,7 +25,6 @@ public class Avis {
 	}
 
 	public Avis(long id, User user, Jeu jeu, String contenu, float note) {
-		super();
 		this.id = id;
 		this.user = user;
 		this.jeu = jeu;

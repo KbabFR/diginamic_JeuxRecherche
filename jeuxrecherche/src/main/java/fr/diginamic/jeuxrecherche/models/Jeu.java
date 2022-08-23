@@ -44,7 +44,6 @@ public class Jeu {
 	public Jeu(String nom, String plateforme, int anneeDeSortie, String genre, String editeur, double ventesNA,
 			double ventesEU, double ventesJP, double ventesAutre, double ventesGlobal, float critiqueMoyenne,
 			double nombreCritiques, float notesJoueurs, double nombreNotesJoueurs, String rating) {
-		super();
 		this.nom = nom;
 		this.plateforme = plateforme;
 		this.anneeDeSortie = anneeDeSortie;
