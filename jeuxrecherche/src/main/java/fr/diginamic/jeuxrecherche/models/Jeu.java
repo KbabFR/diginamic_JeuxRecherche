@@ -6,6 +6,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import fr.diginamic.jeuxrecherche.enums.Genre;
+import fr.diginamic.jeuxrecherche.enums.Plateforme;
+import fr.diginamic.jeuxrecherche.enums.Rating;
+
 @Entity
 public class Jeu {
 
@@ -18,12 +22,12 @@ public class Jeu {
 	private String nom;
 
 	@Column(nullable = false)
-	private String plateforme;
+	private Plateforme plateforme;
 
 	private int anneeDeSortie;
 
 	@Column(nullable = false)
-	private String genre;
+	private Genre genre;
 
 	@Column(nullable = false)
 	private String editeur;
@@ -39,11 +43,11 @@ public class Jeu {
 	private double nombreNotesJoueurs;
 
 	@Column(nullable = false)
-	private String rating;
+	private Rating rating;
 
-	public Jeu(String nom, String plateforme, int anneeDeSortie, String genre, String editeur, double ventesNA,
+	public Jeu(String nom, Plateforme plateforme, int anneeDeSortie, Genre genre, String editeur, double ventesNA,
 			double ventesEU, double ventesJP, double ventesAutre, double ventesGlobal, float critiqueMoyenne,
-			double nombreCritiques, float notesJoueurs, double nombreNotesJoueurs, String rating) {
+			double nombreCritiques, float notesJoueurs, double nombreNotesJoueurs, Rating rating) {
 		this.nom = nom;
 		this.plateforme = plateforme;
 		this.anneeDeSortie = anneeDeSortie;
@@ -100,14 +104,14 @@ public class Jeu {
 	/**
 	 * @return the plateforme
 	 */
-	public String getPlateforme() {
+	public Plateforme getPlateforme() {
 		return plateforme;
 	}
 
 	/**
 	 * @param plateforme the plateforme to set
 	 */
-	public void setPlateforme(String plateforme) {
+	public void setPlateforme(Plateforme plateforme) {
 		this.plateforme = plateforme;
 	}
 
@@ -128,14 +132,14 @@ public class Jeu {
 	/**
 	 * @return the genre
 	 */
-	public String getGenre() {
+	public Genre getGenre() {
 		return genre;
 	}
 
 	/**
 	 * @param genre the genre to set
 	 */
-	public void setGenre(String genre) {
+	public void setGenre(Genre genre) {
 		this.genre = genre;
 	}
 
@@ -282,14 +286,14 @@ public class Jeu {
 	/**
 	 * @return the rating
 	 */
-	public String getRating() {
+	public Rating getRating() {
 		return rating;
 	}
 
 	/**
 	 * @param rating the rating to set
 	 */
-	public void setRating(String rating) {
+	public void setRating(Rating rating) {
 		this.rating = rating;
 	}
 

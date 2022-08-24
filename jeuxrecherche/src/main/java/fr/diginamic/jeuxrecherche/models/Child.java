@@ -8,6 +8,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import fr.diginamic.jeuxrecherche.enums.Genre;
+import fr.diginamic.jeuxrecherche.enums.Plateforme;
+
 @Entity
 public class Child {
 
@@ -22,9 +25,9 @@ public class Child {
 	@Column(nullable = false)
 	private int age;
 
-	private List<String> plateformes;
+	private List<Plateforme> plateformes;
 
-	private List<String> genresPreferes;
+	private List<Genre> genresPreferes;
 
 	public Child() {
 
@@ -81,28 +84,28 @@ public class Child {
 	/**
 	 * @return the plateformes
 	 */
-	public List<String> getPlateformes() {
+	public List<Plateforme> getPlateformes() {
 		return plateformes;
 	}
 
 	/**
 	 * @param plateformes the plateformes to set
 	 */
-	public void setPlateformes(List<String> plateformes) {
+	public void setPlateformes(List<Plateforme> plateformes) {
 		this.plateformes = plateformes;
 	}
 
 	/**
 	 * @return the genresPreferes
 	 */
-	public List<String> getGenresPreferes() {
+	public List<Genre> getGenresPreferes() {
 		return genresPreferes;
 	}
 
 	/**
 	 * @param genresPreferes the genresPreferes to set
 	 */
-	public void setGenresPreferes(List<String> genresPreferes) {
+	public void setGenresPreferes(List<Genre> genresPreferes) {
 		this.genresPreferes = genresPreferes;
 	}
 
