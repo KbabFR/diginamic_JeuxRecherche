@@ -1,10 +1,13 @@
 package fr.diginamic.jeuxrecherche.models;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
+@Entity
 public class Avis {
 
 	@Id
@@ -12,7 +15,10 @@ public class Avis {
 	@Column(nullable = false)
 	private long id;
 
+	@ManyToOne
 	private User user;
+	
+	@ManyToOne
 	private Jeu jeu;
 
 	private String contenu;

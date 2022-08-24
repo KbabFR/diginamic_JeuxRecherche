@@ -1,12 +1,17 @@
 package fr.diginamic.jeuxrecherche.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Column;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 
 import fr.diginamic.jeuxrecherche.enums.Genre;
 import fr.diginamic.jeuxrecherche.enums.Plateforme;
@@ -25,9 +30,17 @@ public class Child {
 	@Column(nullable = false)
 	private int age;
 
-	private List<Plateforme> plateformes;
+	// Probleme avec les @ANNOTATION de plateformes et genresPreferences
+	// J'ai pu voir l'annotation @CollectionTable ? à creuser et se renseigner
+	
+	@Embedded
+	private List<Plateforme> plateformes = new ArrayList<Plateforme>();
 
-	private List<Genre> genresPreferes;
+	@Embedded
+	private List<Genre> genresPreferes = new ArrayList<Genre>();
+	
+	@ManyToMany
+	private List<Jeu> jeuFavoris = new ArrayList<Jeu>();
 
 	public Child() {
 

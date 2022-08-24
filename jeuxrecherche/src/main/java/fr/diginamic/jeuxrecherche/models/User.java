@@ -1,5 +1,6 @@
 package fr.diginamic.jeuxrecherche.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -7,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class User {
@@ -28,8 +30,12 @@ public class User {
 	@Column(nullable = false)
 	private String pass;
 
-	private List<Child> listeEnfants;
+	@OneToMany
+	private List<Child> listeEnfants = new ArrayList<Child>();
 	// TODO la méthode d'ajout d'enfant à cette liste
+	
+	@OneToMany(mappedBy = "user")
+	private List<Avis> listeAvis = new ArrayList<Avis>();
 
 	public User() {
 

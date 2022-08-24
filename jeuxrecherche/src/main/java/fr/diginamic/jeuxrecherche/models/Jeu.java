@@ -1,10 +1,14 @@
 package fr.diginamic.jeuxrecherche.models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 import fr.diginamic.jeuxrecherche.enums.Genre;
 import fr.diginamic.jeuxrecherche.enums.Plateforme;
@@ -45,6 +49,9 @@ public class Jeu {
 	@Column(nullable = false)
 	private Rating rating;
 
+	@OneToMany(mappedBy = "jeu")
+	private List<Avis> avis = new ArrayList<Avis>();
+	
 	public Jeu(String nom, Plateforme plateforme, int anneeDeSortie, Genre genre, String editeur, double ventesNA,
 			double ventesEU, double ventesJP, double ventesAutre, double ventesGlobal, float critiqueMoyenne,
 			double nombreCritiques, float notesJoueurs, double nombreNotesJoueurs, Rating rating) {
