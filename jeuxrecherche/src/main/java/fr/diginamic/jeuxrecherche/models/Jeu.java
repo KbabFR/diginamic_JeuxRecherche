@@ -5,6 +5,8 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -19,7 +21,7 @@ public class Jeu {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(nullable = false)
+	@Column(name="id", nullable = false)
 	private Integer id;
 
 	@Column(nullable = false)
@@ -28,6 +30,7 @@ public class Jeu {
 	@Column(nullable = false)
 	private Plateforme plateforme;
 
+	@Column(name="anneeDeSortie")
 	private int anneeDeSortie;
 
 	@Column(nullable = false)
@@ -47,6 +50,7 @@ public class Jeu {
 	private double nombreNotesJoueurs;
 
 	@Column(nullable = false)
+	@Enumerated(EnumType.STRING)
 	private Rating rating;
 
 	@OneToMany(mappedBy = "jeu")
