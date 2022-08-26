@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ConnexionComponent } from './pages/connexion/connexion.component';
 import { InscriptionComponent } from './pages/inscription/inscription.component';
+import { LandingpageComponent } from './pages/landingpage/landingpage.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path:'connexion',
     component: ConnexionComponent
+  },
+  {
+    path:'',
+    component: LandingpageComponent
   }
 ];
  
