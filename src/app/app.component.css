@@ -1,0 +1,57 @@
+header {
+    height: 60px;
+    background-color: brown;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+header li{ 
+    display:inline; 
+  
+    margin-left: 15px;
+    margin-right: 15 px;
+    align-items: center;
+    
+  
+} 
+#butheadinscription{
+    border-radius: 10%;
+    align-items: center;
+}
+
+#butheadconnexion{
+    border-radius: 10%;
+    align-items: center;
+}
+
+#title-logo{
+    font-size: 30px;
+}
+
+#gauche{
+     text-align: left;
+     align-items: center;
+     margin-top: 0px;
+     margin-bottom: 0px;
+     height: 100%;
+}
+
+#droite{
+    margin-right: 30px;
+    text-align: right;
+    align-items: center;
+    
+}
+/*
+header nav{
+    display: table-cell;
+    text-align: right;
+    
+}
+
+display: table;*/
