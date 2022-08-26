@@ -1,0 +1,22 @@
+#body_connexion{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  
+  }
+  
+  .col-6{
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  img {
+    /*max-height: 100vh;*/
+  height : 100vh;
+  width: 100%;
+  display: block;
+  }
