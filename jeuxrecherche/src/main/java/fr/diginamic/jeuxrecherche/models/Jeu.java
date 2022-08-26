@@ -19,6 +19,9 @@ import fr.diginamic.jeuxrecherche.enums.Rating;
 @Entity
 public class Jeu {
 
+	static float generalAverage = (float)6.8;
+	static float confidenceNumber = 10;
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id", nullable = false)
@@ -307,5 +310,25 @@ public class Jeu {
 	public void setRating(Rating rating) {
 		this.rating = rating;
 	}
-
+	
+	
+	/**
+	 * @param generalAvg La constante de moyenne arithmétique de tous les jeux 
+	 * @param confidenceNumber La constante de valeur de confiance nécessaire au calcul de moyenne bayésienne
+	 * @param jeu Le jeu dont il faut calculer la note finale selon cette méthode
+	 * @return la note finale du jeu calculée par moyenne bayésienne
+	 */
+	public Float getBayesianAvg() {
+		return ((getNotesJoueurs() * (float)(getNombreNotesJoueurs())) + (generalAverage*confidenceNumber))
+				/((float)(getNombreNotesJoueurs()) + confidenceNumber);
+	}
+	
+	/**
+	 * @param j Le jeu dont ont doit comparer la moyenne bayésienne avec le jeu courant
+	 * @return le résultat de la comparaison 
+	 */
+	public int compareTo(Jeu j) {
+		
+	    return getBayesianAvg().compareTo(j.getBayesianAvg());
+	}
 }

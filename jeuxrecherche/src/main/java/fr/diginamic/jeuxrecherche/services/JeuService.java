@@ -83,5 +83,14 @@ public class JeuService {
 		}
 
 	}
+	
+	public List<Jeu> sortByAmountOfReviewsAndAverage(List<Jeu> list) {
+		
+		list.sort(null);
+		
+		return list;
+	}
+	
+	
 
 }
