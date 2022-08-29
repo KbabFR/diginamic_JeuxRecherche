@@ -84,8 +84,9 @@ public class JeuService {
 
 	}
 	
-	public List<Jeu> sortByAmountOfReviewsAndAverage(List<Jeu> list) {
+	public List<Jeu> sortByAmountOfReviewsAndAverage(Child child) {
 		
+		List<Jeu> list = filterByAgeConsoleAndGenre(child);
 		list.sort(null);
 		
 		return list;

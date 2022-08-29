@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import fr.diginamic.jeuxrecherche.models.Child;
 import fr.diginamic.jeuxrecherche.models.Jeu;
 import fr.diginamic.jeuxrecherche.services.JeuService;
 
@@ -34,6 +35,11 @@ public class JeuController {
 		return this.jeuService.findById(id);
 	}
 
+	@GetMapping("/search")
+	public List<Jeu> findRightOne(@RequestBody @Valid Child child) {
+		return this.jeuService.sortByAmountOfReviewsAndAverage(child);
+	}
+	
 	@PostMapping
 	public Jeu createJeu(@RequestBody @Valid Jeu jeuToCreate) {
 		return this.jeuService.create(jeuToCreate);
