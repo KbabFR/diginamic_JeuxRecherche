@@ -1,0 +1,81 @@
+
+header {
+    height: 60px;
+    background-color: brown;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+header li{ 
+    display:inline; 
+  
+    margin-left: 15px;
+    margin-right: 15 px;
+    align-items: center;
+    
+  
+} 
+#butheadinscription{
+    border-radius: 10%;
+    align-items: center;
+}
+
+#butheadconnexion{
+    border-radius: 10%;
+    align-items: center;
+}
+
+#title-logo{
+    font-size: 30px;
+}
+
+#gauche{
+     text-align: left;
+     align-items: center;
+     margin-top: 0px;
+     margin-bottom: 0px;
+     height: 100%;
+     border: 100px;
+     
+}
+
+#droite{
+    margin-right: 30px;
+    text-align: right;
+    align-items: center;
+}
+.footer{
+    display: flex; 
+   
+      
+}
+
+.footer_pages>li{
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    display:inline;
+    align-items: center;
+}
+.footer_pages{
+    position:absolute;
+    bottom: -135px;
+    width:100%;
+    height:50px;
+    text-align: center;
+      
+}
+
+/*
+header nav{
+    display: table-cell;
+    
+    
+}
+
+display: table;*/
