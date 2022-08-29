@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { InscriptionEnfantComponent } from './components/inscription-enfant/inscription-enfant.component';
 import { ConnexionComponent } from './pages/connexion/connexion.component';
 import { InscriptionComponent } from './pages/inscription/inscription.component';
 import { LandingpageComponent } from './pages/landingpage/landingpage.component';
@@ -16,7 +17,12 @@ const routes: Routes = [
   {
     path:'',
     component: LandingpageComponent
-  }
+  },
+  {
+    path:'inscription-enfant',
+    component: InscriptionEnfantComponent
+  },
+    
 ];
  
   //{path: '**', redirectTo: '/error/404'}

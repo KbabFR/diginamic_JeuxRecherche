@@ -10,6 +10,8 @@ import { ConnexionComponent } from './pages/connexion/connexion.component';
 import { ResearchComponent } from './components/research/research.component';
 import { CarrouselComponent } from './components/carrousel/carrousel.component';
 import { LandingpageComponent } from './pages/landingpage/landingpage.component';
+import { InscriptionEnfantComponent } from './components/inscription-enfant/inscription-enfant.component';
+import { UserComponent } from './pages/user/user.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { LandingpageComponent } from './pages/landingpage/landingpage.component'
     LandingpageComponent,
     ResearchComponent,
     CarrouselComponent,
+    InscriptionEnfantComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
