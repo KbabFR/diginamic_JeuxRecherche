@@ -12,11 +12,16 @@ h2{
     margin-bottom: 50px;
 }
 img{
-    width: 200px;
-    height: 250px;
+    width: 190px;
+    height: 225px;
+    margin-bottom: 30px;
 }
 .user{
     display:flex;
+    justify-content: space-evenly;
+}
+#deconnect{
+    justify-content: flex-end;
 }
 .caractUser{
     align-items: flex-start;
@@ -24,13 +29,17 @@ img{
 /*.listUser{
     display:inline; 
 }*/
-.caractEnfant{
-    align-items: center;
-    display:flex;
-    justify-content: space-evenly;
-}
+
 
 .bouton{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.mesEnfants{
+
     display: flex;
     justify-content: center;
 }

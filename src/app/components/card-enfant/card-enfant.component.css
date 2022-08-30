@@ -1,0 +1,16 @@
+.caractEnfant{
+    align-items: center;
+    display:flex;
+    justify-content: space-evenly;
+}
+h2{
+    text-align: center;
+    margin: 10px;
+}
+.cardEnfant{
+    border: 2px solid black;
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+
+}

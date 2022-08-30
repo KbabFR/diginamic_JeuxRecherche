@@ -1,4 +1,3 @@
-
 header {
     height: 60px;
     background-color: brown;
@@ -11,63 +10,72 @@ header {
 
 }
 
-header li{ 
-    display:inline; 
-  
+header li {
+    display: inline;
+
     margin-left: 15px;
     margin-right: 15 px;
     align-items: center;
-    
-  
-} 
-#butheadinscription{
+
+
+}
+
+#butheadinscription {
     border-radius: 10%;
     align-items: center;
 }
 
-#butheadconnexion{
+#butheadconnexion {
     border-radius: 10%;
     align-items: center;
 }
 
-#title-logo{
+#title-logo {
     font-size: 30px;
 }
 
-#gauche{
-     text-align: left;
-     align-items: center;
-     margin-top: 0px;
-     margin-bottom: 0px;
-     height: 100%;
-     border: 100px;
-     
+#gauche {
+    text-align: left;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    border: 100px;
+
 }
 
-#droite{
+#droite {
     margin-right: 30px;
     text-align: right;
     align-items: center;
 }
-.footer{
-    display: flex; 
-   
-      
+
+#droiteConnected {
+    margin-right: 30px;
+    text-align: right;
+    align-items: center;
 }
 
-.footer_pages>li{
+.footer {
+    display: flex;
+    bottom: 0px;
+
+
+}
+
+.footer_pages>li {
     margin-left: 20px;
     margin-right: 20px;
     align-items: center;
-    display:inline;
+    display: inline;
 }
-.footer_pages{
-    position:absolute;
-    bottom: -135px;
-    width:100%;
-    height:50px;
+
+.footer_pages {
+    position: absolute;
+    width: 100%;
+    height: 50px;
     text-align: center;
-      
+
 }
 
 /*

@@ -10,7 +10,7 @@
             <span id="title-logo"> JeuxRecherche</span>
         </li>
         <li>
-            <a href="lien.html" class="Home"> Accueil </a>
+            <a routerLink="//" class="Home"> Accueil </a>
         </li>
         <li>
             <a href="index.html" class="Home"> Blog </a>
@@ -21,14 +21,24 @@
 
     </nav>
 
-    <nav id="droite">
-        <!--mettre le ng if a partir d'ici ???-->
+    <nav id="droiteConnected" *ngIf="!connected">
         <li>
-            <button id="butheadinscription">Inscription</button>
-            <!--<a [routerLink]=["inscription"]>Inscription</a>-->
+            <button id="butheadinscription" routerLink="/inscription/">Inscription</button>
+
         </li>
         <li>
-            <button id="butheadconnexion">Connexion</button>
+            <button id="butheadconnexion" routerLink="/connexion/">Connexion</button>
+        </li>
+
+    </nav>
+
+    <nav id="droite" *ngIf="connected">
+
+        <li>
+            <a routerLink="/user/">Mon profil</a>
+        </li>
+        <li>
+            <!--  <button id="butheadconnexion" routerLink="//">Déconnexion</button>-->
         </li>
 
     </nav>

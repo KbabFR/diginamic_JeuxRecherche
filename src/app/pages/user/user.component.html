@@ -1,47 +1,37 @@
-<h1>Titre de la page</h1>
-    <div  class="body">
+<h1>Mon profil</h1>
+<div class="body">
 
-        
-        <div  class="user">
-            <div class="imageUser">
+
+    <div class="user">
+        <div class="imageUser">
             <img src="assets/images/photo-user.jpeg">
+           
         </div>
         <div class="caractUser">
-                    <p>Prénom</p>
-                    <!--qui viendra de la page inscription / connexion-->
-                    <p>Nom</p>
-                
-                    <p>Email</p>
+            <p>Prénom</p>
+            <!--qui viendra de la page inscription / connexion-->
+            <p>Nom</p>
+
+            <p>Email</p>
+        </div>
+        <div id="deconnect">
+            <button routerLink="//">Déconnexion</button>
         </div>
     </div>
 
-        <!--cardEnfant-->
-        <div class="cardEnfant">
-            <h2>Mes enfants</h2>
-            <div class="caractEnfant">
-                <p> Prénom enfant</p>
-                <p>Age enfant</p>
-                <p>Console</p>
-                <p>Genres préférés</p>
-                       
-            </div>
-
-
-            <div>
-                <!--doit contenir l'image loupe + le lien initiant la recherche de jeux-->
-            </div>
-
-            <!--carroussel-->
-            <div>
-                <!-- contient le carroussel de jeux de l'enfant-->
-            </div>
-
-            <!--bouton ajout affichant le popup inscritpion-enfant -->
-            <div class="bouton">
-                <button style="margin: 50px; padding: 10px" type="button" class="btn btn-primary"
-                    (click)="openPopup()">Ajouter un
-                    Enfant
-                </button>
-            </div>
-        </div>
+    <div class="mesEnfants">
+        <h2>Mes enfants</h2>
     </div>
+
+    <!--cardEnfant-->
+
+<app-card-enfant></app-card-enfant>
+
+    <!--bouton ajout affichant le popup inscritpion-enfant -->
+    <div class="bouton">
+        <button  type="button" class="btn btn-primary" (click)="openPopup()">Ajouter
+            un
+            Enfant
+        </button>
+    </div>
+</div>
