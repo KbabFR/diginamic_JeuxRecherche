@@ -5,6 +5,7 @@ import { ConnexionComponent } from './pages/connexion/connexion.component';
 import { InscriptionComponent } from './pages/inscription/inscription.component';
 import { LandingpageComponent } from './pages/landingpage/landingpage.component';
 import { UserComponent } from './pages/user/user.component';
+import { ResultatComponent } from './pages/resultat/resultat.component';
 
 const routes: Routes = [
   {
@@ -26,7 +27,11 @@ const routes: Routes = [
    {
     path:'user',
     component : UserComponent
-   } 
+   },
+   {
+    path:'recherche',
+    component: ResultatComponent
+  } 
 ];
  
   //{path: '**', redirectTo: '/error/404'}
