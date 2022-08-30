@@ -12,6 +12,7 @@ import { CarrouselComponent } from './components/carrousel/carrousel.component';
 import { LandingpageComponent } from './pages/landingpage/landingpage.component';
 import { InscriptionEnfantComponent } from './components/inscription-enfant/inscription-enfant.component';
 import { UserComponent } from './pages/user/user.component';
+import { CardEnfantComponent } from './components/card-enfant/card-enfant.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { UserComponent } from './pages/user/user.component';
     CarrouselComponent,
     InscriptionEnfantComponent,
     UserComponent,
+    CardEnfantComponent,
   ],
   imports: [
     BrowserModule,

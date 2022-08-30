@@ -4,6 +4,7 @@ import { InscriptionEnfantComponent } from './components/inscription-enfant/insc
 import { ConnexionComponent } from './pages/connexion/connexion.component';
 import { InscriptionComponent } from './pages/inscription/inscription.component';
 import { LandingpageComponent } from './pages/landingpage/landingpage.component';
+import { UserComponent } from './pages/user/user.component';
 
 const routes: Routes = [
   {
@@ -22,7 +23,10 @@ const routes: Routes = [
     path:'inscription-enfant',
     component: InscriptionEnfantComponent
   },
-    
+   {
+    path:'user',
+    component : UserComponent
+   } 
 ];
  
   //{path: '**', redirectTo: '/error/404'}
