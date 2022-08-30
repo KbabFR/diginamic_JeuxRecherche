@@ -17,12 +17,14 @@
     display: flex;
     border-radius: 8px;
     width: 65vw;
-    border:2px solid #820EB9;
+
     height: 15vw;
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
     align-content: stretch;
+    background-color:whitesmoke;
+    box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.2);
 }
 
 .select {
