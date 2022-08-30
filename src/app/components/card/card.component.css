@@ -1,0 +1,19 @@
+#card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: 180px;
+    height: 190px;
+    border-radius: 8px;
+}
+
+#img-jeu {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#txt-jeu {
+    font-size: large;
+}
+

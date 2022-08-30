@@ -13,6 +13,8 @@ import { LandingpageComponent } from './pages/landingpage/landingpage.component'
 import { InscriptionEnfantComponent } from './components/inscription-enfant/inscription-enfant.component';
 import { UserComponent } from './pages/user/user.component';
 import { CardEnfantComponent } from './components/card-enfant/card-enfant.component';
+import { CardComponent } from './components/card/card.component';
+import { DragScrollModule } from 'ngx-drag-scroll';
 
 @NgModule({
   declarations: [
@@ -25,12 +27,15 @@ import { CardEnfantComponent } from './components/card-enfant/card-enfant.compon
     InscriptionEnfantComponent,
     UserComponent,
     CardEnfantComponent,
+    CardComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     NgbModule,
+    DragScrollModule,
     
   ],
   providers: [],
