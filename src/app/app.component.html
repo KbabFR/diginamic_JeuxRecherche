@@ -1,15 +1,28 @@
 <header class="header">
 
     <nav id="gauche">
+        <style id="header">
+            a {
+                text-decoration: none;
+                color: white;
+            }
 
+            /* souris sur le lien */
+            a:hover {
+                color: #820EB9;
+            }
+
+            /* lien sélectionné */
+            a:active {
+                color: #820EB9;
+            }
+        </style>
 
         <li>
-            <img src="./assets/images/Vector.png">
+            <img src="./assets/images/logo.png">
         </li>
         <li>
-            <span id="title-logo"> JeuxRecherche</span>
-        </li>
-        <li>
+
             <a routerLink="//" class="Home"> Accueil </a>
         </li>
         <li>
@@ -20,7 +33,11 @@
         </li>
 
     </nav>
-
+    <!--
+    <div *ngIf="!connected;then connected=true"></div>    
+    <ng-template #contenu>Le contenu stocké ici s'affichera uniquement si la condition est remplie.</ng-template>
+    -->
+    
     <nav id="droiteConnected" *ngIf="!connected">
         <li>
             <button id="butheadinscription" routerLink="/inscription/">Inscription</button>
@@ -33,7 +50,6 @@
     </nav>
 
     <nav id="droite" *ngIf="connected">
-
         <li>
             <a routerLink="/user/">Mon profil</a>
         </li>
@@ -50,6 +66,22 @@
 <div class="footer">
 
     <ul class="footer_pages">
+        <style id="footer_pages">
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            /* souris sur le lien */
+            a:hover {
+                color: #820EB9;
+            }
+
+            /* lien sélectionné */
+            a:active {
+                color: #820EB9;
+            }
+        </style>
 
         <li><a href="LIEN URL">Back to site</a></li>
 

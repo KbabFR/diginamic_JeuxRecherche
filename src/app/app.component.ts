@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bernardproject';
-  connected:boolean = false;
+  private _connected:boolean = false;
+public get connected(){
+  return this._connected;
 }
+public set connected(value:boolean){
+  this._connected=value;
+}
+}
+
