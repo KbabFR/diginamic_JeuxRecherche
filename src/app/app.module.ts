@@ -15,6 +15,8 @@ import { UserComponent } from './pages/user/user.component';
 import { CardEnfantComponent } from './components/card-enfant/card-enfant.component';
 import { CardComponent } from './components/card/card.component';
 import { DragScrollModule } from 'ngx-drag-scroll';
+import { ResultatComponent } from './pages/resultat/resultat.component';
+import { CardResultatComponent } from './components/card-resultat/card-resultat.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { DragScrollModule } from 'ngx-drag-scroll';
     UserComponent,
     CardEnfantComponent,
     CardComponent,
+    ResultatComponent,
+    CardResultatComponent,
     
   ],
   imports: [

@@ -12,4 +12,6 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  fav:boolean = false;
+
 }

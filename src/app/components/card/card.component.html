@@ -1,4 +1,7 @@
 <div id="card">
+    
     <img id="img-jeu" src="assets/images/jeu.png" alt="jeu.png">
-    <h2 id="txt-jeu">TITRE</h2>
+    <h2 id="txt-jeu">Animal crossing : new horizon</h2>
+    <img class="img-fav" src="assets/images/coeur_vide.png" alt="pafav" *ngIf="!fav" (click)="fav = !fav;">
+    <img class="img-fav" src="assets/images/coeur.png" alt="fav" *ngIf="fav" (click)="fav = !fav;">
 </div>
