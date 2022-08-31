@@ -1,16 +1,41 @@
-.caractEnfant{
+.caractEnfant {
     align-items: center;
-    display:flex;
-    justify-content: space-evenly;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: space-between;
+    display: flex;
+
+
 }
-h2{
+
+h2 {
     text-align: center;
     margin: 10px;
 }
-.cardEnfant{
+
+.cardEnfant {
     border: 2px solid black;
     width: 90%;
     padding: 10px;
     margin: auto;
+
+}
+
+.pEnfant {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0px;
+    margin-left: 20x;
+    margin-right: 20px;
+}
+
+.rechJeu {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    right: 0px;
+
 
 }
