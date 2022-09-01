@@ -11,7 +11,14 @@ export class CardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  displayStyle = "none";
+  openPopup() {
+    this.displayStyle = "block";
+  }
+  closePopup() {
+    this.displayStyle = "none";
+  }
   fav:boolean = false;
 
 }
+

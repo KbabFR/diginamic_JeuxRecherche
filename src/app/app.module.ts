@@ -17,6 +17,8 @@ import { CardComponent } from './components/card/card.component';
 import { DragScrollModule } from 'ngx-drag-scroll';
 import { ResultatComponent } from './pages/resultat/resultat.component';
 import { CardResultatComponent } from './components/card-resultat/card-resultat.component';
+import { CardAvisComponent } from './components/card-avis/card-avis.component';
+import { CarrouselAvisComponent } from './components/carrousel-avis/carrousel-avis.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { CardResultatComponent } from './components/card-resultat/card-resultat.
     CardComponent,
     ResultatComponent,
     CardResultatComponent,
+    CardAvisComponent,
+    CarrouselAvisComponent,
     
   ],
   imports: [

@@ -39,6 +39,10 @@ img{
    
 }
 
+app-carrousel-avis{
+    width: 100%;
+
+}
 
 .mesEnfants{
 
@@ -49,3 +53,8 @@ img{
     margin-bottom: 10px;
   
   }
+
+.mesavis{
+    display: flex;
+    justify-content: center;
+}
