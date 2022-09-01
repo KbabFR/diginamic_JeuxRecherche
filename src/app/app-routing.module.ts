@@ -9,6 +9,7 @@ import { ResultatComponent } from './pages/resultat/resultat.component';
 import { MlpcComponent } from './pages/mlpc/mlpc.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProposComponent } from './pages/propos/propos.component';
+import { BlogComponent } from './pages/blog/blog.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,10 @@ const routes: Routes = [
   {
     path:'propos',
     component:ProposComponent
+  },
+  {
+    path:'blog',
+    component:BlogComponent
   }
 ];
  

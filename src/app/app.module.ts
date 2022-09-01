@@ -20,6 +20,7 @@ import { CardResultatComponent } from './components/card-resultat/card-resultat.
 import { MlpcComponent } from './pages/mlpc/mlpc.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProposComponent } from './pages/propos/propos.component';
+import { BlogComponent } from './pages/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { ProposComponent } from './pages/propos/propos.component';
     MlpcComponent,
     ContactComponent,
     ProposComponent,
+    BlogComponent,
     
   ],
   imports: [
