@@ -1,0 +1,30 @@
+<div id="body" class="row h-100 align-items-center justify-content-center">
+    <h1>Envie de nous contacter ?</h1>
+
+    <form [formGroup]="loginForm">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Votre nom" required> <br>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Votre email" required> <br>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Objet" required> <br>
+        </div>
+        <div class="form-group">
+
+            <textarea id="message" size="200" type="text" class="form-control" placeholder="Votre message" required>
+</textarea>
+        </div>
+
+        <div class="form-group">
+
+
+            <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+
+        </div>
+       
+
+    </form>
+    <button class="btn btn-primary" style=" background-color: #820EB9;border: 0px;">Envoyer le message</button>
+</div>

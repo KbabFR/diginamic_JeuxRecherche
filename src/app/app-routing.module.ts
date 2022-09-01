@@ -6,6 +6,10 @@ import { InscriptionComponent } from './pages/inscription/inscription.component'
 import { LandingpageComponent } from './pages/landingpage/landingpage.component';
 import { UserComponent } from './pages/user/user.component';
 import { ResultatComponent } from './pages/resultat/resultat.component';
+import { MlpcComponent } from './pages/mlpc/mlpc.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { ProposComponent } from './pages/propos/propos.component';
+import { BlogComponent } from './pages/blog/blog.component';
 
 const routes: Routes = [
   {
@@ -31,7 +35,24 @@ const routes: Routes = [
    {
     path:'recherche',
     component: ResultatComponent
-  } 
+  }, 
+  {
+    path: 'mlpc',
+  component: MlpcComponent
+  },
+  {
+
+    path:'contact',
+    component:ContactComponent
+  },
+  {
+    path:'propos',
+    component:ProposComponent
+  },
+  {
+    path:'blog',
+    component:BlogComponent
+  }
 ];
  
   //{path: '**', redirectTo: '/error/404'}
