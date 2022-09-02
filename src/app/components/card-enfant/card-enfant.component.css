@@ -35,7 +35,12 @@ h2 {
     display: flex;
     justify-content: flex-end;
     width: 50%;
-    right: 0px;
+    right: 0px;  
+}
+.item{
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
 }
 .retirer{
     display: flex;
