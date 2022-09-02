@@ -66,8 +66,9 @@ header li {
 }
 
 .footer {
-  margin-bottom : 30px;
-  padding: 0px;
+  margin-bottom : 50px;
+  padding-bottom: -105px;
+  
     
 }
 
