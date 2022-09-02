@@ -5,17 +5,19 @@
     <div class="user">
         <div class="imageUser">
             <img src="assets/images/photo-user.jpeg">
-           
+
         </div>
         <div class="caractUser">
+            <div class="noms">
             <p>Prénom</p>
             <!--qui viendra de la page inscription / connexion-->
             <p>Nom</p>
-
+        </div>
             <p>Email</p>
         </div>
         <div id="deconnect">
-            <button routerLink="//" class="btn btn-primary" style="background-color:#fd7e14; color: #000; border: 3px black solid;">Déconnexion</button>
+            <button routerLink="//" class="btn btn-primary"
+                style="background-color:#fd7e14; color: #000; border: 3px black solid;">Déconnexion</button>
         </div>
     </div>
 
@@ -25,7 +27,7 @@
     <div id="carrouselavis">
         <app-carrousel-avis></app-carrousel-avis>
     </div>
-    
+
 
     <div class="mesEnfants">
         <h2>Mes enfants</h2>
@@ -33,13 +35,15 @@
 
     <!--cardEnfant-->
 
-<app-card-enfant></app-card-enfant>
+    <app-card-enfant></app-card-enfant>
 
     <!--bouton ajout affichant le popup inscritpion-enfant -->
     <div class="bouton">
-        <button style="margin: 50px; padding: 10px; background-color: #820EB9;" type="button" class="btn btn-primary" (click)="openPopup()">Ajouter un
+        <button style="margin: 50px; padding: 10px; background-color: #820EB9;border: none;" type="button" class="btn btn-primary"
+            (click)="openPopup()">Ajouter un
             Enfant
         </button>
+       
         <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -48,106 +52,115 @@
                     </div>
                     <div class="modal-body">
                         <form [formGroup]="loginFormEnfant">
-    
+
                             <div class="form-group">
-    
+
                                 <input type="text" class="form-control" placeholder="Prénom">
                             </div>
-    
+
                             <div class="form-group">
-    
+
                                 <input type="text" class="form-control" placeholder="Age">
                             </div>
-    
+
                             <div class="form-group">
-    
+
                                 <input type="text" class="form-control" placeholder="Console">
                             </div>
-    
+
                             <div class="form-group">
-    
+
                                 <input type="text" class="form-control" placeholder="Préférences">
-                            </div>              
-    
+                            </div>
+
                         </form>
-    
+
                     </div>
                     <div class="modal-footer">
-                        <button id="buttonsubmit" type="submit" class="btn btn-primary" style=" background-color: #820EB9;" (click)="closePopup()">Ajouter</button>
-                        <button type="button" class="btn btn-primary" style=" background-color: white; color: #000; border: 0px;" (click)="closePopup()">
-                            Close
+                        <button id="buttonsubmit" type="submit" class="btn btn-primary"
+                            style=" background-color: #820EB9;" (click)="closePopup()">Ajouter</button>
+                        <button type="button" class="btn btn-primary"
+                            style=" background-color: white; color: #000; border: 0px;" (click)="closePopup()">
+                            Fermer
                         </button>
-    </div>
-</div><h1>Mon profil</h1>
-<div class="body">
-
-
-    <div class="user">
-        <div class="imageUser">
-            <img src="assets/images/photo-user.jpeg">
-           
-        </div>
-        <div class="caractUser">
-            <p>Prénom</p>
-            <!--qui viendra de la page inscription / connexion-->
-            <p>Nom</p>
-
-            <p>Email</p>
-        </div>
-        <div id="deconnect">
-            <button routerLink="//" class="btn btn-primary" style="background-color:#fd7e14; color: #000; border: 3px black solid;">Déconnexion</button>
-        </div>
-    </div>
-
-    <div class="mesEnfants">
-        <h2>Mes enfants</h2>
-    </div>
-
-    <!--cardEnfant-->
-
-<app-card-enfant></app-card-enfant>
-
-    <!--bouton ajout affichant le popup inscritpion-enfant -->
-    <div class="bouton">
-        <button style="margin: 50px; padding: 10px; background-color: #820EB9;" type="button" class="btn btn-primary" (click)="openPopup()">Ajouter un
-            Enfant
-        </button>
-        <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Ajout Enfant</h4>
                     </div>
-                    <div class="modal-body">
-                        <form [formGroup]="loginFormEnfant">
-    
-                            <div class="form-group">
-    
-                                <input type="text" class="form-control" placeholder="Prénom">
-                            </div>
-    
-                            <div class="form-group">
-    
-                                <input type="text" class="form-control" placeholder="Age">
-                            </div>
-    
-                            <div class="form-group">
-    
-                                <input type="text" class="form-control" placeholder="Console">
-                            </div>
-    
-                            <div class="form-group">
-    
-                                <input type="text" class="form-control" placeholder="Préférences">
-                            </div>              
-    
-                        </form>
-    
+                </div>
+                <h1>Mon profil</h1>
+                <div class="body">
+
+
+                    <div class="user">
+                        <div class="imageUser">
+                            <img src="assets/images/photo-user.jpeg">
+
+                        </div>
+                        <div class="caractUser">
+                            <p>Prénom</p>
+                            <!--qui viendra de la page inscription / connexion-->
+                            <p>Nom</p>
+
+                            <p>Email</p>
+                        </div>
+                        <div id="deconnect">
+                            <button routerLink="//" class="btn btn-primary"
+                                style="background-color:#fd7e14; color: #000; border: 3px black solid;">Déconnexion</button>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <button id="buttonsubmit" type="submit" class="btn btn-primary" style=" background-color: #820EB9;" (click)="closePopup()">Ajouter</button>
-                        <button type="button" class="btn btn-primary" style=" background-color: white; color: #000; border: 0px;" (click)="closePopup()">
-                            Close
+
+                    <div class="mesEnfants">
+                        <h2>Mes enfants</h2>
+                    </div>
+
+                    <!--cardEnfant-->
+
+                    <app-card-enfant></app-card-enfant>
+
+                    <!--bouton ajout affichant le popup inscritpion-enfant -->
+                    <div class="bouton">
+                        <button style="margin: 50px; padding: 10px; background-color: #820EB9;" type="button"
+                            class="btn btn-primary" (click)="openPopup()">Ajouter un
+                            Enfant
                         </button>
-    </div>
-</div>
+                      
+                        <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Ajout Enfant</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form [formGroup]="loginFormEnfant">
+
+                                            <div class="form-group">
+
+                                                <input type="text" class="form-control" placeholder="Prénom">
+                                            </div>
+
+                                            <div class="form-group">
+
+                                                <input type="text" class="form-control" placeholder="Age">
+                                            </div>
+
+                                            <div class="form-group">
+
+                                                <input type="text" class="form-control" placeholder="Console">
+                                            </div>
+
+                                            <div class="form-group">
+
+                                                <input type="text" class="form-control" placeholder="Préférences">
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button id="buttonsubmit" type="submit" class="btn btn-primary"
+                                            style=" background-color: #820EB9;" (click)="closePopup()">Ajouter</button>
+                                        <button type="button" class="btn btn-primary"
+                                            style=" background-color: white; color: #000; border: 0px;"
+                                            (click)="closePopup()">
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
