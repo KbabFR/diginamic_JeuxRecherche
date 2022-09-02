@@ -24,6 +24,20 @@ h1{
     font-weight: bold;
 }
 
+h3{
+    font-size: 24px;
+    font-weight: bold
+}
+
+h4{
+
+    font-size: 18px;
+}
+
+.form-control{
+    margin-bottom: 20px;
+}
+
 #btn-avis{
     background: none;
     background-color: #820EB9;

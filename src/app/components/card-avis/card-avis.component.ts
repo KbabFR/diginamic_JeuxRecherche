@@ -12,4 +12,5 @@ export class CardAvisComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
 }

@@ -1,10 +1,41 @@
 <div id="body">
    <img id="img-game" src="assets/images/wii-sport.jpg" alt="jaquette">
    <div id="info-game">
-    <h1 id="title-game">Wii Sport</h1>
-    <h2 class="info">7 ans et plus</h2>
-    <h2 class="info">Nintendo Wii</h2>
-    <h2 class="info">Simulation</h2>
-    <button id="btn-avis">Voir les avis</button>   
+      <h1 id="title-game">Wii Sport</h1>
+      <h2 class="info">7 ans et plus</h2>
+      <h2 class="info">Nintendo Wii</h2>
+      <h2 class="info">Simulation</h2>
+      <button id="btn-avis" (click)="openPopup()">Donnez son avis</button>
+      <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+               <div class="modal-header">
+                  <h3 class="modal-title">Votre avis sur le jeu</h3>
+               </div>
+
+               <div class="modal-body">
+                  <form [formGroup]="loginForm">
+                     <h4>Mon avis</h4>
+                     <div class="form-group">
+                        <textarea id="message" size="200" type="text" class="form-control" placeholder="Votre message" required></textarea>
+                     </div>
+                     <h4>L'avis de mon enfant</h4>
+                     <div class="form-group">
+                        <textarea id="message" size="200" type="text" class="form-control" placeholder="Votre message" required></textarea>
+                     </div>
+                  </form>
+               </div>
+
+               <div class="modal-footer">
+                  <button id="buttonsubmit" type="submit" class="btn btn-primary" style=" background-color: #820EB9;"
+                     (click)="closePopup()">Valider</button>
+                  <button type="button" class="btn btn-primary"
+                     style=" background-color: white; color: #000; border: 0px;" (click)="closePopup()">Fermer</button>
+               </div>
+
+            </div>
+         </div>
+      </div>
    </div>
 </div>
