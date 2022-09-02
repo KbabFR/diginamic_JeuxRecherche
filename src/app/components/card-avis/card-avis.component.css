@@ -1,0 +1,52 @@
+#body{
+    box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 360px;
+}
+
+#img-user{
+    width: 20%;
+    margin: 20px;
+}
+
+#user {
+    display: flex;
+    justify-content:left;
+}
+
+#name{
+    margin-top: 15%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#commentaireparent{
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+#commentaireparent h3{
+    font-size: 18px;
+}
+
+#commentaireparent p{
+    font-size: 14px;
+    white-space: normal;
+}
+
+
+#commentaireenfant{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+#commentaireenfant h3{
+    font-size: 18px;
+}
+
+#commentaireenfant p{
+    font-size: 14px;
+    white-space: normal;
+}

@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+p{
+    color: black;
+   text-align: justify;
+}
+.corps{
+    display: flex;
+    align-items: center;
+}
+.image{
+    width: 50%;
+}
+.text{
+    width: 50%;
+    margin-right: 100px;
+   
+}
+
+img{
+    height: 100%;
+    border-radius: 5px;
+    width: 550px;
+    margin-left: 100px;
+    
+}

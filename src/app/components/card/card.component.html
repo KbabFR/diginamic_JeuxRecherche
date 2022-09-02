@@ -1,7 +1,31 @@
-<div id="card">
-    
+<div id="card"> 
     <img id="img-jeu" src="assets/images/jeu.png" alt="jeu.png">
     <h2 id="txt-jeu">Animal crossing : new horizon</h2>
-    <img class="img-fav" src="assets/images/coeur_vide.png" alt="pafav" *ngIf="!fav" (click)="fav = !fav;">
+    <img class="img-fav" src="assets/images/coeur_vide.png" alt="pafav" *ngIf="!fav" (click)="fav = !fav;openPopup()">
+    <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Ajouter favoris</h4>
+                </div>
+
+                <div class="modal-body">
+                    <input type="checkbox" id="kids1" name="Enfant 1">
+                    <label for="kids1">Enfant 1</label>
+                    <input type="checkbox" id="kids2" name="Enfant 2">
+                    <label for="kids1">Enfant 2</label>
+                </div>
+            
+                <div class="modal-footer">
+                    <button id="buttonsubmit" type="submit" class="btn btn-primary" style=" background-color: #820EB9;" (click)="closePopup()">Valider</button>
+                    <button type="button" class="btn btn-primary" style=" background-color: white; color: #000; border: 0px;" (click)="closePopup()">Fermer</button>
+                </div>
+
+            </div>    
+        </div>
+    </div>
     <img class="img-fav" src="assets/images/coeur.png" alt="fav" *ngIf="fav" (click)="fav = !fav;">
 </div>
+<!--
+<img class="img-fav" src="assets/images/coeur_vide.png" alt="pafav" *ngIf="!fav" (click)="fav = !fav;">-->

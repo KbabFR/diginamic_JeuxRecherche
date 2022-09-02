@@ -29,6 +29,11 @@ app-carrousel{
 
 }
 
+app-carrousel-avis{
+    width: 100%;
+
+}
+
 .carrousel{
     width: 80%;
     margin-bottom: 2%;
