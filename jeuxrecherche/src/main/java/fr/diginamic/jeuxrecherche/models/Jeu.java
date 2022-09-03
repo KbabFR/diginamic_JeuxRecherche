@@ -12,8 +12,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-import fr.diginamic.jeuxrecherche.enums.Genre;
-import fr.diginamic.jeuxrecherche.enums.Plateforme;
 import fr.diginamic.jeuxrecherche.enums.Rating;
 
 @Entity
@@ -31,13 +29,13 @@ public class Jeu {
 	private String nom;
 
 	@Column(nullable = false)
-	private Plateforme plateforme;
+	private String plateforme;
 
 	@Column(name="anneeDeSortie")
 	private int anneeDeSortie;
 
 	@Column(nullable = false)
-	private Genre genre;
+	private String genre;
 
 	@Column(nullable = false)
 	private String editeur;
@@ -59,7 +57,7 @@ public class Jeu {
 	@OneToMany(mappedBy = "jeu")
 	private List<Avis> avis = new ArrayList<Avis>();
 	
-	public Jeu(String nom, Plateforme plateforme, int anneeDeSortie, Genre genre, String editeur, double ventesNA,
+	public Jeu(String nom, String plateforme, int anneeDeSortie, String genre, String editeur, double ventesNA,
 			double ventesEU, double ventesJP, double ventesAutre, double ventesGlobal, float critiqueMoyenne,
 			double nombreCritiques, float notesJoueurs, double nombreNotesJoueurs, Rating rating) {
 		this.nom = nom;
@@ -118,14 +116,14 @@ public class Jeu {
 	/**
 	 * @return the plateforme
 	 */
-	public Plateforme getPlateforme() {
+	public String getPlateforme() {
 		return plateforme;
 	}
 
 	/**
 	 * @param plateforme the plateforme to set
 	 */
-	public void setPlateforme(Plateforme plateforme) {
+	public void setPlateforme(String plateforme) {
 		this.plateforme = plateforme;
 	}
 
@@ -146,14 +144,14 @@ public class Jeu {
 	/**
 	 * @return the genre
 	 */
-	public Genre getGenre() {
+	public String getGenre() {
 		return genre;
 	}
 
 	/**
 	 * @param genre the genre to set
 	 */
-	public void setGenre(Genre genre) {
+	public void setGenre(String genre) {
 		this.genre = genre;
 	}
 

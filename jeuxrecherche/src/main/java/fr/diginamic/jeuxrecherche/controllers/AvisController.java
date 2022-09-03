@@ -32,7 +32,7 @@ public class AvisController {
 	}
 
 	@GetMapping("/{id}")
-	public Avis findOne(@PathVariable("id") Integer id) {
+	public Avis findOne(@PathVariable("id") long id) {
 		return this.avisService.findById(id);
 	}
 

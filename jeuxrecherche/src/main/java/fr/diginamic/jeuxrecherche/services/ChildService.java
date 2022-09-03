@@ -29,7 +29,7 @@ public class ChildService {
 		return this.childRepo.findAll();
 	}
 
-	public Child findById(Integer id) {
+	public Child findById(long id) {
 		return this.childRepo.findById(id).orElseThrow(EntityNotFoundException::new);
 	}
 

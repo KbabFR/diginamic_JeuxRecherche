@@ -1,3 +1,4 @@
+/*
 package fr.diginamic.jeuxrecherche.utils;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -15,3 +16,4 @@ public class BasicAuthController {
 		return new AuthenticationBean("You are authenticated");
 	}	
 }
+*/

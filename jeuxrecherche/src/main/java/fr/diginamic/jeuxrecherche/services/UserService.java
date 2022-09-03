@@ -29,7 +29,7 @@ public class UserService {
 		return this.userRepo.findAll();
 	}
 
-	public User findById(Integer id) {
+	public User findById(long id) {
 		return this.userRepo.findById(id).orElseThrow(EntityNotFoundException::new);
 	}
 

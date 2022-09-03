@@ -1,6 +1,5 @@
 package fr.diginamic.jeuxrecherche.utils;
 
-import fr.diginamic.jeuxrecherche.enums.Plateforme;
 import fr.diginamic.jeuxrecherche.models.Jeu;
 
 import java.io.IOException;
@@ -47,39 +46,41 @@ public class CoverImageGetter {
 	 * @param annee l'annee de sortie du jeu
 	 * @return la chaine contenant l'intitulle de la requete
 	 */
-	public static String getRequete(String nomJeu, Plateforme plateforme, String annee) {
-		String nomPlateforme = "";
-		switch(plateforme) {
-		//Nintendo3DS, NintendoDS, PC, PS3, PS4, Wii, WiiU, Xbox360, XboxOne
-		case Nintendo3DS:
-			nomPlateforme = "Nintendo3DS";
-			break;
-		case NintendoDS:
-			nomPlateforme = "NintendoDS";
-			break;
-		case PC:
-			nomPlateforme = "PC";
-			break;
-		case PS3:
-			nomPlateforme = "PS3";
-			break;
-		case PS4:
-			nomPlateforme = "PS4";
-			break;
-		case Wii:
-			nomPlateforme = "Wii";
-			break;
-		case WiiU:
-			nomPlateforme = "WiiU";
-			break;
-		case Xbox360:
-			nomPlateforme = "Xbox360";
-			break;
-		case XboxOne:
-			nomPlateforme = "XboxOne";
-			break;
-		}
-		return nomJeu + " " + nomPlateforme + " " + annee + " coverart" ;
+	public static String getRequete(String nomJeu, String plateforme, String annee) {
+		/*
+			String nomPlateforme = "";
+			switch(plateforme) {
+			//Nintendo3DS, NintendoDS, PC, PS3, PS4, Wii, WiiU, Xbox360, XboxOne
+			case Nintendo3DS:
+				nomPlateforme = "Nintendo3DS";
+				break;
+			case NintendoDS:
+				nomPlateforme = "NintendoDS";
+				break;
+			case PC:
+				nomPlateforme = "PC";
+				break;
+			case PS3:
+				nomPlateforme = "PS3";
+				break;
+			case PS4:
+				nomPlateforme = "PS4";
+				break;
+			case Wii:
+				nomPlateforme = "Wii";
+				break;
+			case WiiU:
+				nomPlateforme = "WiiU";
+				break;
+			case Xbox360:
+				nomPlateforme = "Xbox360";
+				break;
+			case XboxOne:
+				nomPlateforme = "XboxOne";
+				break;
+			}
+		*/
+		return nomJeu + " " + plateforme + " " + annee + " coverart" ;
 		
 	}
 

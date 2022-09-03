@@ -1,4 +1,6 @@
+/*
 package fr.diginamic.jeuxrecherche.utils;
+ 
 
 public class AuthenticationBean {
 
@@ -21,3 +23,4 @@ public class AuthenticationBean {
 		return String.format("HelloWorldBean [message=%s]", message);
 	}
 }
+*/

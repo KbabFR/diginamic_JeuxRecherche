@@ -4,17 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Column;
-import javax.persistence.Embedded;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
-
-import fr.diginamic.jeuxrecherche.enums.Genre;
-import fr.diginamic.jeuxrecherche.enums.Plateforme;
 
 @Entity
 public class Child {
@@ -33,11 +27,9 @@ public class Child {
 	// Probleme avec les @ANNOTATION de plateformes et genresPreferences
 	// J'ai pu voir l'annotation @CollectionTable ? à creuser et se renseigner
 	
-	@Embedded
-	private List<Plateforme> plateformes = new ArrayList<Plateforme>();
+	private String plateformes;
 
-	@Embedded
-	private List<Genre> genresPreferes = new ArrayList<Genre>();
+	private String genresPreferes;
 	
 	@ManyToMany
 	private List<Jeu> jeuFavoris = new ArrayList<Jeu>();
@@ -97,28 +89,28 @@ public class Child {
 	/**
 	 * @return the plateformes
 	 */
-	public List<Plateforme> getPlateformes() {
+	public String getPlateformes() {
 		return plateformes;
 	}
 
 	/**
 	 * @param plateformes the plateformes to set
 	 */
-	public void setPlateformes(List<Plateforme> plateformes) {
+	public void setPlateformes(String plateformes) {
 		this.plateformes = plateformes;
 	}
 
 	/**
 	 * @return the genresPreferes
 	 */
-	public List<Genre> getGenresPreferes() {
+	public String getGenresPreferes() {
 		return genresPreferes;
 	}
 
 	/**
 	 * @param genresPreferes the genresPreferes to set
 	 */
-	public void setGenresPreferes(List<Genre> genresPreferes) {
+	public void setGenresPreferes(String genresPreferes) {
 		this.genresPreferes = genresPreferes;
 	}
 

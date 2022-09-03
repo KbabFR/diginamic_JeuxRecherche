@@ -32,7 +32,7 @@ public class UserController {
 	}
 
 	@GetMapping("/{id}")
-	public User findOne(@PathVariable("id") Integer id) {
+	public User findOne(@PathVariable("id") long id) {
 		return this.userService.findById(id);
 	}
 

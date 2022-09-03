@@ -32,7 +32,7 @@ public class ChildController {
 	}
 
 	@GetMapping("/{id}")
-	public Child findOne(@PathVariable("id") Integer id) {
+	public Child findOne(@PathVariable("id") long id) {
 		return this.childService.findById(id);
 	}
 

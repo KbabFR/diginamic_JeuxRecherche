@@ -29,7 +29,7 @@ public class AvisService {
 		return this.avisRepo.findAll();
 	}
 
-	public Avis findById(Integer id) {
+	public Avis findById(long id) {
 		return this.avisRepo.findById(id).orElseThrow(EntityNotFoundException::new);
 	}
 
